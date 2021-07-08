@@ -1,0 +1,13 @@
+.social {
+    display: flex;
+    height: $social-h;
+    justify-content: flex-end;
+    margin-top: $margin-small;
+    width: $primary-inner-w;
+}
+
+@media (max-width: $mobile-break) {
+    .social {
+        width: 100%;
+    }
+}

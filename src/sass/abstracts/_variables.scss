@@ -1,0 +1,66 @@
+// colors
+$primary: #3F7B95;
+$off-white: #f6f6f6;
+$black: #24292c;
+$dark-gray: #4b565a;
+$light-gray: #b5c5cb;
+$light-green: #988f51;
+
+$link-inactive:  rgba($black, 0.5);
+$link-active:  rgba($black, 1);
+
+// Line Height
+$line-height-meduim: 3rem;
+
+// Margin
+$margin-small: 1rem;
+$margin-medium: 3rem;
+
+// Padding
+$padding-small: 1rem;
+$padding-medium: 3rem;
+$padding-large: 5rem;
+
+// Sizing
+
+// // Header
+$header-w: 100vw;
+$header-mobile-h: 9rem;
+
+// // Social Media
+$social-h: 15rem;
+
+// // Media Breaks
+$large-media: 1921px;
+$mobile-break: 1250px;
+$mobile-break-small: 750px;
+
+// //Mobile Display
+// // //WIDE
+$primary-content-mobile-h: 23.1rem; 
+$primary-content-mobile-w: 40rem; 
+$primary-modal-mobile-h: 33.2rem;
+$primary-modal-mobile-w: 57.5rem;
+
+// // Regular Display
+$primary-content-h: 75rem;
+$primary-content-w: 130rem;
+$primary-modal-h: 91.3rem;
+$primary-modal-w: 137rem;
+
+// // Large Display
+$primary-content-large-h: 105.5rem;
+$primary-content-large-w: 175rem;
+$primary-modal-large-h: 120.5rem;
+$primary-modal-large-w: 200rem;
+
+// // About and Contact Wrappers
+$primary-inner-h: 40rem;
+$primary-inner-w: 52rem;
+
+// Animation Timing
+$fade-in-quick: .2s;
+$fade-in-slow: .5s;
+
+// Label
+$label-width: 200rem;

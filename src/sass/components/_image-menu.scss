@@ -1,0 +1,21 @@
+.image-menu {
+    align-items: center;
+    animation: fadeIn $fade-in-slow ease-in-out;
+    display: flex;
+    min-height: calc(100vh - 88px);
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: $mobile-break) {
+    .image-menu {
+        flex-direction: column;
+        min-height: calc(100vh - 77px);
+    }
+}
+
+@media (max-width: $mobile-break-small) {
+    .image-menu {
+        min-height: calc(100vh - 112px);
+    }
+}

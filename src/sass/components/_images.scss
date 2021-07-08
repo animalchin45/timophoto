@@ -1,0 +1,129 @@
+.images {
+    align-items: center;
+    animation: fadeIn $fade-in-slow ease-in-out;
+    border: 0;
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-rows: 100%;
+    justify-items: center;
+    overflow: hidden;
+    width: 100vw;
+
+    &:hover .image__previous {
+        opacity: .8;
+    }
+
+    &:hover .image__next {
+        opacity: .8;
+    }
+
+    &:hover .label {
+        opacity: 1;
+    }
+}
+
+.image {
+    cursor: pointer;
+
+    & i {
+        color: $off-white;
+        text-shadow: 2px 2px $black;
+    }
+    
+
+    &__previous {
+        align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        grid-column: full-start / center-start;
+        height: 100%;
+        justify-content: center;
+        justify-self: end;
+        opacity: 1;
+        transition: opacity $fade-in-quick ease-in-out;
+        width: 5rem;
+    }
+
+    &__current {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        grid-column: center-start / center-end;
+        height: 100%;
+        width: 100%;
+
+        & img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__next {
+        align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        grid-column: center-end / full-end;
+        height: 100%;
+        justify-content: center;
+        justify-self: start;
+        opacity: 1;
+        transition: opacity $fade-in-quick ease-in-out;
+        width: 5rem;
+    }
+}
+
+@media (min-width: $large-media) {
+    .images {
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 21.8rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .images {
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 10rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+        grid-template-rows: 1fr 70% 1fr;
+    }    
+
+    .image {
+
+        &__previous {
+            grid-row: 2 / 3;
+        }
+
+        &__current {
+            grid-row: 2 / 3;
+        }
+
+        &__next {
+            grid-row: 2 / 3;
+        }
+    }
+}
+
+@media (max-width: $mobile-break-small) {
+    .images {
+        grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 5rem) [col-end] ) [center-end] minmax(2rem, 1fr) [full-end];
+        grid-template-rows: 1fr 35% 1fr;
+    }    
+
+    .image {
+
+        &__previous {
+            grid-row: 2 / 3;
+            width: 2rem;
+        }
+
+        &__current {
+            grid-row: 2 / 3;
+        }
+
+        &__next {
+            grid-row: 2 / 3;
+            width: 2rem;
+        }
+    }
+}

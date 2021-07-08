@@ -1,0 +1,32 @@
+.label {
+    align-items: center;
+    color: $black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    opacity: 1;
+    padding-bottom: $padding-small;
+    text-align: center;
+    transition: opacity .25s ease-in-out;
+    width: 100%;
+    z-index: -1;
+}
+
+// @media (min-width: $large-media) {
+//     .label {
+//         padding-bottom: $padding-large;
+//     }
+// }
+
+// @media (max-width: $mobile-break) {
+//     .label {
+//         padding-bottom: $padding-large;
+//         width: $primary-content-mobile-w;
+//     }
+// }
+
+// @media (max-width: $mobile-break-small) {
+//     .label {
+//         width: $primary-content-mobile-w;
+//     }
+// }

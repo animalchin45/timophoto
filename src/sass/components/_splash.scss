@@ -1,0 +1,30 @@
+.splash {
+    animation: fadeIn $fade-in-slow ease-in-out;
+    display: grid;
+    grid-template-rows: .5fr;
+
+    &__img {
+        background: url(../images/_MG_7150.jpg);
+        background-repeat: no-repeat;
+        background-position: (-50rem -35rem);
+        height: 67vh;
+    }
+}
+
+@media (min-width: $large-media) {
+    .splash {
+
+        &__img {
+            background-position: (0 -37rem);
+        }
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .splash {
+
+        &__img {
+            background-position: (-145rem -55rem);
+        }
+    }
+}

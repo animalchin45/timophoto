@@ -1,0 +1,15 @@
+.wrapper {
+
+    &--content {
+        display: grid;
+        grid-template-rows: 12vh 88vh;
+        position: relative;
+    }
+
+    &--images {
+        display: grid;
+        grid-template-rows: 90% minmax(min-content, 1fr);
+        justify-items: center;
+    }
+    
+}

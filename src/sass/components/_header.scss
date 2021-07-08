@@ -1,0 +1,128 @@
+.header {
+    position: sticky;
+    top: 0;
+    transition: background-color $fade-in-quick ease-in-out;
+    width: 100%;
+    z-index: 3;
+
+    &--splash {
+        height: 33vh;
+        width: 100vw;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 50%;
+
+        &--splash {
+            align-items: flex-end;
+            display: flex;
+            justify-content: flex-end;
+            width: 40vw;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+
+        &__inner {
+            text-align: right;
+        }
+
+        &--splash {
+            align-items: flex-end;
+            display: flex;
+            height: 33vh;
+            justify-content: flex-end;
+            width: 60vw;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        padding: 0 10rem 0 10rem;
+        
+        &--splash {
+            display: flex;
+            padding: 0 10rem 0 0;
+            transform: translateY(-$padding-small);
+        }
+    }
+}
+
+.title {
+    color: $black;
+    
+    &--sub {
+        color: $black;
+        margin-top: -1rem;
+    }
+}
+
+.scroll {
+    background-color: $off-white;
+}
+
+@media (max-width: $mobile-break) {
+    .header {
+
+        &--splash {
+            flex-direction: column-reverse;
+        }
+
+        &__nav {
+            margin-top: $margin-small;
+            width: 100%;
+
+            &--splash {
+                align-items: flex-start;
+                padding-top: $padding-medium;
+            }
+        }
+
+        &__title {
+            margin-bottom: $margin-small;
+            width: 100%;
+
+            &--splash {
+                width: 100vw;
+            }
+        }
+
+        &__inner {
+            padding: $padding-small;
+
+            &--splash {
+                padding: 0 $padding-small 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-break-small) {
+    .header {
+
+        &__nav {
+            justify-content: center;
+            margin-top: $margin-small;
+            width: 100%;
+        }
+
+        &__title {
+            justify-content: center;
+
+            &--inner {
+                transform: translateX(-.75rem);
+            }
+        }
+
+        &__inner {
+            flex-direction: column;
+            padding: $padding-small;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+// font sizes
+$arrow: 3rem;
+$big-font-size: 2.2rem;
+$btn-font-size: 1.8rem;
+$btn-menu-size: 3.6rem;
+$default-font-size: 1.6rem;
+$icon-font-size: 3rem;
+$icon-font-size-mobile: 1.5rem;
+$label-font-size: 1.8rem;
+$label-font-size-mobile: 1.2rem;
+$logo-font-size: 6rem;
+$sub-logo-font-size: 2.1rem;
+$logo-font-size-mobile: 3.5rem;
+$sub-logo-font-size-mobile: 1.1rem;
+
+// font families
+$title-font: calluna, serif;
+$secondary-font: poppins, sans-serif;
+
+// font weights
+$bold: 600;
+$light: 300;
+
+// font settings
+.arrow {
+    font-size: $arrow;
+}
+
+.btn {
+    font-family: $secondary-font;
+    font-size: $btn-font-size;
+
+    &__menu {
+        &--title {
+            font-size: $btn-menu-size;
+        }
+    }
+}
+
+.title {
+    font-family: $title-font;
+    font-size: $logo-font-size;
+    font-weight: $light;
+    text-transform: uppercase;
+}
+
+.title--sub {
+    font-family: $title-font;
+    font-size: $sub-logo-font-size;
+    font-weight: $light;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: $big-font-size;
+    font-family: $secondary-font;
+    font-weight: $light;
+    letter-spacing: 0.3rem;
+}
+
+h3 {
+    font-size: $label-font-size;
+    font-family: $secondary-font;
+    font-weight: $light;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    font-size: $default-font-size;
+    font-family: $secondary-font;
+}
+
+a {
+    font-size: $default-font-size;
+    font-family: $secondary-font;
+}
+
+i {
+    font-size: $logo-font-size;
+}
+
+@media (max-width: $mobile-break) {
+    .btn {
+        font-size: $default-font-size;
+
+        &__menu {
+            &--title {
+                font-size: $big-font-size;
+            }
+        }
+    }
+
+    .title {
+        font-size: $logo-font-size-mobile;
+    }
+
+    .title--sub {
+        font-size: $sub-logo-font-size-mobile;
+        letter-spacing: 3.5px;
+    }
+
+    h3 {
+        font-size: $label-font-size-mobile;
+    }
+
+    .arrow {
+        font-size: $icon-font-size-mobile;
+    }
+}
