@@ -25,3 +25,7 @@ yarn-error.log*
 .vercel
 
 /image_src
+.vercelignore
+debug.log
+package-lock.json
+timophoto.code-workspace
