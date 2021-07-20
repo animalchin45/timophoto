@@ -41,7 +41,7 @@
         height: 100%;
         justify-content: center;
         justify-self: end;
-        opacity: 1;
+        opacity: 0;
         transition: opacity $fade-in-quick ease-in-out;
         width: 5rem;
     }
@@ -70,7 +70,7 @@
         height: 100%;
         justify-content: center;
         justify-self: start;
-        opacity: 1;
+        opacity: 0;
         transition: opacity $fade-in-quick ease-in-out;
         width: 5rem;
     }
